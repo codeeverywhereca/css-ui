@@ -1,0 +1,212 @@
+<html>
+	<head>
+		<style>
+			*{ margin: 0; padding: 0; }
+			img{ border: 0; }
+			a{ cursor: pointer; }
+			textarea{ overflow: auto; }
+			ul li{ margin-left: 25px; }
+			
+			.ui-desktop{ display: block !important; }
+			.ui-mobile{ display: none !important; }
+			.ui-print{ direction: none !important; }
+			
+			@media screen and (max-device-width: 480px)
+			{
+				.ui-desktop{ display: none !important; }
+				.ui-mobile{ display: block !important; }
+				.ui-print{ direction: none !important; }
+			}
+			
+			@media print
+			{
+				.ui-desktop{ display: none !important; }
+				.ui-mobile{ display: none !important; }
+				.ui-print{ direction: block !important; }
+			}
+			
+			.ui-show{ display: block !important; }
+			.ui-hide{ display: none !important; }
+			.ui-clear{ clear: both; }
+						
+			.ui-txt-left{ text-align: left; }
+			.ui-txt-right{ text-align: right; }
+			.ui-txt-center{ text-align: center; }
+			.ui-txt-up{ text-transform: uppercase; }
+			.ui-txt-cap{ text-transform: capitalize; }
+			.ui-txt-trunc{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+			
+			.ui-txt-grey{ color: #C9C9C9; }
+			.ui-txt-blue{ color: #2f87d9; }
+			.ui-txt-green{ color: #58C026; }
+			.ui-txt-red{ color: #ee5a4f; }
+			.ui-txt-orange{ color: #F7AB2B; }
+			.ui-txt-yellow{ color: #FCC72F; }
+				
+			.ui-separate
+			{
+				background: #f4f4f4;
+				border: 0;
+				height: 1px;
+				margin: 10px 0 10px 0;
+				clear: both;
+			}
+			
+			.ui-fixed-header
+			{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background: #fff;
+				z-index: 999;
+				overflow: hidden;
+				border-bottom: 1px solid #cccccc;
+				height: 48px;
+			}
+			.ui-fixed-header-clear { clear: both; margin-bottom: 48px; }
+		</style>
+	</head>
+	<body>
+		<h1>formatting</h1>
+		<table class="ui-table-lined ui-table-full">
+		    <thead>
+		        <tr>
+		            <th>Description</th>
+		            <th>Class</th>
+		            <th>CSS</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td>Show an element</td>
+		            <td>ui-show</td>
+		            <td>display: block;</td>
+		        </tr>
+		        <tr>
+		            <td>Hide an element</td>
+		            <td>ui-hide</td>
+		            <td>display: none;</td>
+		        </tr>
+		        <tr>
+		            <td>Clear an element</td>
+		            <td>ui-clear</td>
+		            <td>clear: both;</td>
+		        </tr>
+		        <tr>
+		            <td>Make width 100%</td>
+		            <td>ui-table-full</td>
+		            <td>width: 100%;</td>
+		        </tr>
+			</tbody>
+		</table>
+		
+		<hr/>
+		
+		<table class="ui-table-lined ui-table-full">
+		    <tbody>
+		        <tr>
+		            <td>Show when on desktop</td>
+		            <td>ui-desktop</td>
+		            <td>...</td>
+		        </tr>
+		        <tr>
+		            <td>Show when on mobile</td>
+		            <td>ui-mobile</td>
+		            <td>...</td>
+		        </tr>
+		        <tr>
+		            <td>Show when printing</td>
+		            <td>ui-print</td>
+		            <td>...</td>
+		        </tr>
+			</tbody>
+		</table>
+		
+		<hr/>
+		
+		<table class="ui-table-lined ui-table-full">
+			<tbody>
+				<tr>
+		            <td>Left align text</td>
+		            <td>ui-txt-left</td>
+		            <td>text-align: left;</td>
+		        </tr>
+		        <tr>
+		        	<td>Right align text</td>
+		            <td>ui-txt-right</td>
+		            <td>text-align: right;</td>
+		        </tr>
+		        <tr>
+		            <td>Center some text</td>
+		            <td>ui-txt-center</td>
+		            <td>text-align: center;</td>
+		        </tr>
+		        <tr>
+		            <td>Uppercase some text</td>
+		            <td>ui-txt-up</td>
+		            <td>text-transform: uppercase;</td>
+		        </tr>
+				<tr>
+		            <td>Capitalize some text</td>
+		            <td>ui-txt-cap</td>
+		            <td>text-transform: capitalize;</td>
+		        </tr>
+		        <tr>
+		            <td>Truncate some text</td>
+		            <td>ui-txt-trunc</td>
+		            <td>...</td>
+		        </tr>
+			</tbody>
+		</table>
+		
+		<hr/>
+		
+		<table class="ui-table-lined ui-table-full">
+			<tbody>
+		         <tr>
+		            <td><span class="ui-txt-grey">grey text</span></td>
+		            <td>ui-txt-grey</td>
+		            <td>color: #C9C9C9;</td>
+		        </tr>
+		        <tr>
+		            <td><span class="ui-txt-blue">blue text</span></td>
+		            <td>ui-txt-blue</td>
+		            <td>color: #2f87d9;</td>
+		        </tr>
+		        <tr>
+		            <td><span class="ui-txt-green">green text</span></td>
+		            <td>ui-txt-green</td>
+		            <td>color: #58C026;</td>
+		        </tr>
+		        <tr>
+		            <td><span class="ui-txt-red">red text</span></td>
+		            <td>ui-txt-red</td>
+		            <td>color: #ee5a4f;</td>
+		        </tr>
+		        <tr>
+		            <td><span class="ui-txt-orange">orange text</span></td>
+		            <td>ui-txt-orange</td>
+		            <td>color: #F7AB2B;</td>
+		        </tr>
+		        <tr>
+		            <td><span class="ui-txt-yellow">yellow text</span></td>
+		            <td>ui-txt-yellow</td>
+		            <td>color: #F7AB2B;</td>
+		        </tr>
+			</tbody>
+		</table>
+		
+		<hr/>
+		
+		<table class="ui-table-lined ui-table-full">
+			<tbody>
+		        <tr>
+		            <td>Line seperator</td>
+		            <td>ui-separate</td>
+		            <td>...</td>
+		        </tr>
+		    </tbody>
+		</table>
+	</body>
+</html>
