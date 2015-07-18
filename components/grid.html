@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<style>
+			@media screen and (max-width: 960px)
+			{
+				.ui-wrapper{ width: auto !important; }
+				.ui-full, .ui-half, .ui-third, .ui-sixth
+				{
+					float: none !important;
+					display: block !important;
+					width: 96% !important;
+					padding: 2% !important;
+				}
+				
+				.ui-fourth
+				{
+					width: 46% !important;
+					padding: 2% !important;
+				}	
+			}
+			
+			.ui-wrapper
+			{
+				width: 960px;
+				margin: 0 auto;
+			}		
+			
+			.ui-left, .ui-half, .ui-third, .ui-fourth, .ui-sixth{ float: left; }
+			.ui-right{ float: right; }
+			
+			.ui-full{ width: 930px; padding: 15px; }
+			.ui-half{ width: 450px; padding: 15px; }
+			.ui-third{ width: 290px; padding: 15px; }
+			.ui-fourth{ width: 210px; padding: 15px; }
+			.ui-sixth{ width: 610px; padding: 15px; }
+		</style>
+	</head>
+	<body>
+		<h1>grid</h1>
+		
+		<table class="ui-table-lined ui-table-full">
+			<thead>
+				<tr>
+					<th>class</th>
+					<th>columns</th>
+					<th>padding</th>
+					<th>width</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>ui-wrapper</td>
+					<td>-</td>
+					<td>0px</td>
+					<td>960px</td>
+				</tr>
+				<tr>
+					<td>ui-full</td>
+					<td>1</td>
+					<td>15px</td>
+					<td>930px</td>
+				</tr>
+				<tr>
+					<td>ui-half</td>
+					<td>2</td>
+					<td>15px</td>
+					<td>450px</td>
+				</tr>
+				<tr>
+					<td>ui-third</td>
+					<td>3</td>
+					<td>15px</td>
+					<td>290px</td>
+				</tr>
+				<tr>
+					<td>ui-fourth</td>
+					<td>4</td>
+					<td>15px</td>
+					<td>210px</td>
+				</tr>
+				<tr>
+					<td>ui-sixth</td>
+					<td>-</td>
+					<td>15px</td>
+					<td>610px</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
