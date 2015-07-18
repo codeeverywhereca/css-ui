@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<style>
+			table{ border-collapse: collapse; border-spacing: 0; }
+			td, th{ padding: 0; }
+			
+			.ui-table tr th, .ui-table tr td,
+			.ui-table-lined tr th, .ui-table-lined tr td,
+			.ui-table-grid tr th, .ui-table-grid tr td,
+			.ui-table-min tr th, .ui-table-min tr td
+			{
+				padding: 8px 16px 8px 16px;
+			}
+			
+			.ui-table tr th,
+			.ui-table-lined tr th, .ui-table-lined tr td,
+			.ui-table-grid tr th, .ui-table-grid tr td,
+			.ui-table-min tr th
+			{
+				border-bottom: 1px solid #ccc;
+			}
+			
+			.ui-table, .ui-table-lined, .ui-table-grid{ border: 1px solid #cccccc; }
+			.ui-table tr th, .ui-table-lined tr th, .ui-table-grid tr th{ background: #e7e7e7; }
+			.ui-table-grid tr th, .ui-table-grid tr td{ border-left: 1px solid #ccc; }
+			
+			.ui-table tr:hover, .ui-table-lined tr:hover, .ui-table-grid tr:hover, .ui-table-min tr:hover{
+				background-color: #f6f6f6;
+				-webkit-transition: all 0.3s;
+				-moz-transition:    all 0.3s;
+				-ms-transition:     all 0.3s;
+				-o-transition:      all 0.3s;
+			}
+			
+			.ui-table-full{ width: 100%; }
+		</style>
+	</head>
+	<body>
+		<h1>tables</h1>
+		
+		<h2>ui-table</h2>
+				
+		<table class="ui-table">
+		    <thead>
+		        <tr>
+		            <th>#</th>
+		            <th>First Name</th>
+		            <th>Last Name</th>
+		            <th>Email</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td>1</td>
+		            <td>John</td>
+		            <td>Smith</td>
+		            <td>john.smith@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>2</td>
+		            <td>Sarah</td>
+		            <td>Lee</td>
+		            <td>sarahlee@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>3</td>
+		            <td>Fred</td>
+		            <td>Maison</td>
+		            <td>fred.ma@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>4</td>
+		            <td>George</td>
+		            <td>McKay</td>
+		            <td>g.mckay@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>5</td>
+		            <td>Emily</td>
+		            <td>Simon</td>
+		            <td>emily.simon@email.com</td>
+		        </tr>
+		    </tbody>
+		</table>
+		
+		<h2>ui-table-lined</h2>
+		
+		<table class="ui-table-lined">
+		    <thead>
+		        <tr>
+		            <th>#</th>
+		            <th>First Name</th>
+		            <th>Last Name</th>
+		            <th>Email</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td>1</td>
+		            <td>John</td>
+		            <td>Smith</td>
+		            <td>john.smith@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>2</td>
+		            <td>Sarah</td>
+		            <td>Lee</td>
+		            <td>sarahlee@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>3</td>
+		            <td>Fred</td>
+		            <td>Maison</td>
+		            <td>fred.ma@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>4</td>
+		            <td>George</td>
+		            <td>McKay</td>
+		            <td>g.mckay@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>5</td>
+		            <td>Emily</td>
+		            <td>Simon</td>
+		            <td>emily.simon@email.com</td>
+		        </tr>
+		    </tbody>
+		</table>
+		
+		<h2>ui-table-grid</h2>
+		
+		<table class="ui-table-grid">
+		    <thead>
+		        <tr>
+		            <th>#</th>
+		            <th>First Name</th>
+		            <th>Last Name</th>
+		            <th>Email</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr>
+		            <td>1</td>
+		            <td>John</td>
+		            <td>Smith</td>
+		            <td>john.smith@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>2</td>
+		            <td>Sarah</td>
+		            <td>Lee</td>
+		            <td>sarahlee@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>3</td>
+		            <td>Fred</td>
+		            <td>Maison</td>
+		            <td>fred.ma@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>4</td>
+		            <td>George</td>
+		            <td>McKay</td>
+		            <td>g.mckay@email.com</td>
+		        </tr>
+		        <tr>
+		            <td>5</td>
+		            <td>Emily</td>
+		            <td>Simon</td>
+		            <td>emily.simon@email.com</td>
+		        </tr>
+		    </tbody>
+		</table>
+	</body>
+</html>
