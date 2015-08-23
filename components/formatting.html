@@ -54,6 +54,38 @@
 				clear: both;
 			}
 			
+			ul.ui-list { padding-left: 0px; }
+			
+			ul.ui-list li
+			{
+				margin-left: 0px;
+				padding: 15px;
+				background: white;
+				list-style-type: none;
+				border-width: 0 1px 1px 1px;
+				border-style: solid;
+				border-color: #cccccc;
+				text-transform: capitalize;
+				position: relative;
+			}
+			
+			ul.ui-list li:hover { background: #f6f6f6; }
+			
+			ul.ui-list li:first-child
+			{
+				border-top: 1px solid #CCCCCC;
+				border-radius: 3px 3px 0 0;
+			}
+			
+			ul.ui-list li:last-child { border-radius: 0 0 3px 3px; }
+			
+			ul.ui-list li > span
+			{
+				position: absolute;
+				top: 15px;
+				right: 15px;
+			}
+			
 			.ui-fixed-header
 			{
 				position: fixed;
@@ -215,5 +247,13 @@
 		        </tr>
 		    </tbody>
 		</table>
+		
+		<hr/>
+		
+		<ul class="ui-list">
+			<li>item 1 <span>right</span></li>
+			<li>item 2 <span>right</span></li>
+			<li>item 3 <span>right</span></li>
+		</ul>
 	</body>
 </html>
