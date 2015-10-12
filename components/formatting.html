@@ -54,40 +54,21 @@
 				clear: both;
 			}
 			
-			ul.ui-list { padding-left: 0px; }
-			
-			ul.ui-list li
-			{
-				margin-left: 0px;
-				padding: 15px;
-				background: white;
-				list-style-type: none;
-				border-width: 0 1px 1px 1px;
-				border-style: solid;
-				border-color: #cccccc;
-				text-transform: capitalize;
-				position: relative;
+			.ui-list { border: 1px solid #E7E6E6; }
+			.ui-list li {
+			    list-style-type: none;
+			    position: relative;
+			    padding: 15px;
+			    border-bottom: 1px solid #E7E6E6;
+			    margin-left: 0;
 			}
-			
-			ul.ui-list li:hover { background: #f6f6f6; }
-			
-			ul.ui-list li:first-child
-			{
-				border-top: 1px solid #CCCCCC;
-				border-radius: 3px 3px 0 0;
+			.ui-list li:last-child { border-bottom-width:0; }
+			.ui-list .ui-pos {
+			    position: absolute;
+			    top: 15px;
+			    right: 15px;
 			}
-			
-			ul.ui-list li:last-child { border-radius: 0 0 3px 3px; }
-			
-			ul.ui-list li > span
-			{
-				position: absolute;
-				top: 15px;
-				right: 15px;
-			}
-			
-			.ui-fixed-header
-			{
+			.ui-fixed-header {
 				position: fixed;
 				top: 0;
 				left: 0;
@@ -251,9 +232,9 @@
 		<hr/>
 		
 		<ul class="ui-list">
-			<li>item 1 <span>right</span></li>
-			<li>item 2 <span>right</span></li>
-			<li>item 3 <span>right</span></li>
+			<li>item 1 <span class="ui-pos">right</span></li>
+			<li>item 2 <span class="ui-pos">right</span></li>
+			<li>item 3 <span class="ui-pos">right</span></li>
 		</ul>
 	</body>
 </html>
