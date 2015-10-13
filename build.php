@@ -9,7 +9,7 @@ $files = array(
 );
 
 $header = "/*
-* CSS UI v1.6b4 (Jul 19 2015)
+* CSS UI v1.6b5 (Oct 12 2015)
 * http://css-ui.com
 *
 * Copyright 2015, http://codeeverywhere.ca
