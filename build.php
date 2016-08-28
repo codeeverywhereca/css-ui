@@ -14,7 +14,8 @@ $header = "/*
 *
 * Copyright 2016, http://codeeverywhere.ca
 * Licensed under the MIT license.
-*/";
+*/
+";
 
 file_put_contents("ui.min.css", $header);
 
