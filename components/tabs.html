@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<style>
+			.ui-tabs {
+				position: relative;
+			}
+			.ui-tabs a {
+				float: left;
+				text-decoration: none;
+				color: #000;
+				cursor: pointer;
+				border-top: 1px solid #c8c8c8;
+				border-left: 1px solid #c8c8c8;
+				border-bottom: 1px solid #c8c8c8;
+				background: #f1f1f1;
+				padding: 10px 25px 10px 25px;
+				display: inline-block;
+				text-transform: capitalize;
+			}
+			.ui-tabs a:last-child {
+				border-right: 1px solid #c8c8c8;
+			}
+			.ui-tabs a.selected {
+				background: #fff;
+				border-bottom: 0px;
+				padding-bottom: 11px;
+			}
+			.ui-tabs-content {
+				clear: both;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>tabs</h1>
+		<div class="ui-tabs">
+			<a href="#">tab 1</a>
+			<a href="#" class="selected">tab 2</a>
+			<a href="#">tab 3</a>
+			<a href="#">tab 4</a>
+		</div>
+		<div class="ui-tabs-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	</body>
+</html>
