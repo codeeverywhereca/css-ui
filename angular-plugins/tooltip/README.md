@@ -2,7 +2,7 @@
 A simple stand-alone angular tooltip directive
 
 # How to use
-Add the directive from *angular-tooltip.min.js* and *angular-tooltip.css* to your angular app.
+Add the directive from *angular-tooltip.js* and *angular-tooltip.css* to your angular app.
 
 Use the directive in your app
 ```html
