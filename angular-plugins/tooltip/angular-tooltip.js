@@ -1,6 +1,6 @@
 /*
  * angular-tooltip (April 21 2016)
- * https://github.com/codeeverywhereca/angular-tooltip
+ * https://github.com/codeeverywhereca/css-ui/tree/master/angular-plugins/tooltip
  * Copyright 2016, http://codeeverywhere.ca
  * Licensed under the MIT license.
  */
