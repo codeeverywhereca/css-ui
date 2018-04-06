@@ -6,6 +6,7 @@
 			a{ cursor: pointer; }
 			textarea{ overflow: auto; }
 			ul li{ margin-left: 25px; }
+			p{ margin: 5px 0 5px 0; }
 			
 			.ui-desktop{ display: block !important; }
 			.ui-mobile{ display: none !important; }
@@ -38,7 +39,7 @@
 			
 			.ui-nowrap{ white-space: nowrap; }
 			
-			.ui-pos-rel { position: relative; }
+			.ui-relative { position: relative; }
 			
 			.ui-txt-grey{ color: #C9C9C9; }
 			.ui-txt-blue{ color: #2f87d9; }
@@ -54,21 +55,33 @@
 				height: 1px;
 				clear: both;
 			}
-			
-			.ui-form > div { margin: 15px 0 15px 0; }
-			.ui-form input, .ui-form textarea {
-				padding: 8px;
-				border-radius: 2px;
+						
+			.ui-input { margin: 15px 0 15px 0; }
+			.ui-input label, .ui-input input, .ui-input textarea { display: inline-block;  padding: 8px; }
+			.ui-input label {
+			  width: 145px;
+			  text-align: right;
+			  vertical-align: top;
+			  text-transform: capitalize;
+			}
+			.ui-input input, .ui-input textarea { 
+				font-size: 16px;
+				background: #fff;
+			  margin-right: 10px;
+			  outline: 0;
+			  border-radius: 2px;
 				border: 1px solid rgb(224, 224, 224);
-				font-size: 18px;
 				transition: 750ms;
 			}
-			.ui-form input:hover, .ui-form textarea:hover { border-color: rgb(117, 117, 117); }
-			.ui-form input[type="submit"] {
-				background: #fff;
+			.ui-input input:hover, .ui-input textarea:hover {	border-color: rgb(117, 117, 117); }
+			.ui-input input[type='submit'] {
 				cursor: pointer;
+				margin: 5px 5px 0 0;
 				text-transform: capitalize;
-				color: rgb(88, 88, 88);
+				color: rgb(98,98,98);
+				background: #f8f8f8;
+				background: linear-gradient(#f8f8f8, #dedede);
+				border: 1px solid rgb(167,167,167);
 			}
 			
 			.ui-list { border: 1px solid #E7E6E6; }
@@ -197,7 +210,7 @@
 		        </tr>
 				    <tr>
 		            <td>Make div relative</td>
-		            <td>ui-pos-rel</td>
+		            <td>ui-relative</td>
 		            <td>position: relative;</td>
 		        </tr>
 			</tbody>
@@ -245,7 +258,7 @@
 		<table class="ui-table-lined ui-table-full">
 			<tbody>
 		        <tr>
-		            <td>Line seperator</td>
+		            <td>Line separator</td>
 		            <td>ui-separate</td>
 		            <td>...</td>
 		        </tr>
@@ -254,14 +267,35 @@
 		
 		<hr/>
 		
-		<form class="ui-form">
-			<div>
+		<form>
+			<div class="ui-input">
+				<label>field 1</label>
 				<input type="text" placeholder="enter some text..."/>
 			</div>
-			<div>
-				<textarea placeholder="Type Your Message" style="width:500px;height:170px;"></textarea>
+			<div class="ui-input">
+				<label>field 2</label>
+				<input type="text" placeholder="enter some text..."/>
 			</div>
-			<div>
+			<div class="ui-input">
+				<label>field 3</label>
+				<textarea placeholder="Type Your Message" style="width:450px;height:170px;"></textarea>
+			</div>
+			<div class="ui-input ui-txt-center">
+				<input type="submit" value="submit button"/>
+			</div>
+		</form>
+		
+		<form>
+			<div class="ui-input">
+				<input type="text" placeholder="enter some text..."/>
+			</div>
+			<div class="ui-input">
+				<input type="text" placeholder="enter some text..."/>
+			</div>
+			<div class="ui-input">
+				<textarea placeholder="Type Your Message" style="width:450px;height:170px;"></textarea>
+			</div>
+			<div class="ui-input">
 				<input type="submit" value="submit button"/>
 			</div>
 		</form>

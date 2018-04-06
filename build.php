@@ -1,4 +1,6 @@
 <?php
+date_default_timezone_set('UTC');
+
 $files = array(
 	"components/buttons.html",
 	"components/formatting.html",
@@ -8,11 +10,12 @@ $files = array(
 	"components/tabs.html"
 );
 
+$date = date('M j Y');
 $header = "/*
-* CSS UI v1.6 (Aug 27 2016)
+* CSS UI v1.6.1 ($date)
 * http://css-ui.com
 *
-* Copyright 2016, http://codeeverywhere.ca
+* Copyright 2018, http://codeeverywhere.ca
 * Licensed under the MIT license.
 */
 ";
